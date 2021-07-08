@@ -1,2 +1,2 @@
 # ExCord
-Theme for ExCord Beta
+Add to Theme Folder, Reload your Discord
