@@ -20,7 +20,8 @@
 /*!  */
 /*!  */
 :root {
-  
+    --user-popout-avatar-size: 95px;
+    --user-popout-avatar-position: 10vh; /*higher, more to right, suggested: 1-10 */
     --main-color: #2780e6;
     --hover-color: #1e63b3;
     --success-color: #43b581;
@@ -1944,7 +1945,7 @@ textarea,
     color: #fff
 }
 .message-2qnXI6 .avatar-1BDn8e {
-    transition: all .3s ease-in-out, transform .1s ease-in-out
+    transition: all .3s ease-in-out, transform .6s ease-in-out
 }
 .message-2qnXI6 .avatar-1BDn8e:active {
     transform: scale(0.9)
@@ -9825,3 +9826,7 @@ button[aria-label="Send a gift"],
     padding: 0 10px 0 28px;
     margin-top: 3px;
   }
+  .aboutMeBody-3GuvKk{
+    display: inline;
+}
+
