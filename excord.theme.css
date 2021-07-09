@@ -130,3 +130,9 @@
 	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: 0px; /* user modal background blur [default: calc(var(--background-blur) + 3px)] *
+	
+	/* CUSTOM VARIABLES */
+--panels-opacity: rgba(0, 0, 0, 0.7);   /* Panels opacity */
+--loading-gif: url(https://imgur.com/x4fg0Qv.gif); /* Loading gif */
+--general-margin: 25px;      /* App margin */
+}
