@@ -2,7 +2,7 @@
  * @name exCord
  * @author Excurze
  * @version BETA
- * @description Neu un so
+ * @description Nice Clean Discord Theme. Easy to Edit.
  * @source https://github.com/Excurze
  * @website 
  * @invite x
@@ -25,7 +25,7 @@
 :root {
 	/* RADIAL STATUS */
 	--rs-small-spacing: 0px;  /* spacing between avatar and status [default: 1px, newDefault: 0px] */
-  	--rs-large-spacing: 0px;  /* spacing between avatar and status for user popouts & modals/profiles [default: 3px] */
+  	--rs-large-spacing: 3px;  /* spacing between avatar and status for user popouts & modals/profiles [default: 3px] */
   	--rs-width: 2px;  /* Width/thickness of status border [default: 2px] */
   	--rs-avatar-shape: var(--avatar-roundness);  /* 50% for round - 0% for square [newDefault: 2%]*/
   	--rs-online-color: var(--online-color);  /* See STATUS COLORS */
