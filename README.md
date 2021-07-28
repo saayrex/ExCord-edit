@@ -7,6 +7,5 @@ Works for BetterDiscord and Powercord
 
 # Changelog
 
-- 28.07.2021
+- 28.07.2021 -> Fixed Horizontal Server List not Working
 
-Fixed Horizontal Server List not Working
