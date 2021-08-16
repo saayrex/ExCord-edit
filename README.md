@@ -9,3 +9,5 @@ Works for BetterDiscord and Powercord
 
 - 28.07.2021 -> Fixed Horizontal Server List not Working
 
+- 16.08.2021 -> revert roles to PC Version again - Server List Lag fix for some Linux distros
+
