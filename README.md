@@ -11,3 +11,5 @@ Works for BetterDiscord and Powercord
 
 - 16.08.2021 -> revert roles to PC Version again - Server List Lag fix for some Linux distros
 
+- 01.09.2021 -> Rewrote Code
+
