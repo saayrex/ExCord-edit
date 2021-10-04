@@ -17,6 +17,7 @@
 /* SETTINGS */
 :root {
 
+         --version1_0: none;
 	/* Horizontal Servers List */
 	--HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
 	--HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
