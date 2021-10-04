@@ -9,11 +9,11 @@ Works for BetterDiscord and Powercord
 
 #  4.10.2021
 
--Fixed the channel icon being oversized in embeds and channel topics
--Better Avatars
--Performance boost
--Kinda fixed Serverlist
--Update Notification if the Theme is missing an important Update ( Only theme.css )
+- Fixed the channel icon being oversized in embeds and channel topics
+- Better Avatars
+- Performance boost
+- Kinda fixed Serverlist
+- Update Notification if the Theme is missing an important Update ( Only theme.css )
 
 # 01.09.2021 
  - Rewrote Code
