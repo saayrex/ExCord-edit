@@ -7,6 +7,11 @@ Works for BetterDiscord and Powercord
 
 # Changelog
 
+##  12.01.2022
+
+Updated to newest Discord Version. (fu Discord srsly)
+
+
 ##  4.10.2021
 
 - Fixed the channel icon being oversized in embeds and channel topics
