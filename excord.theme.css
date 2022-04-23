@@ -1,26 +1,54 @@
 /**
- * @name Excord
+ * @name ExCord Reloaded
  * @author Excurze
- * @version 3.0.0 beta
- * @description Clean and nice Design to relax :3
+ * @version 1.0
+ * @description Cozy!
  * @source 
  * @website 
- * @invite XnJu3PS3
+ * @invite 
  */
+
+
 
 /* IMPORT CSS */
 
-@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
-@import url("https://excurze.github.io/importnew/excordbeta.css");
+@import url("https://excurze.github.io/importexcord/excord.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+
+
+
+/* ChannelTabs Lined */
+
 
 
 /* SETTINGS */
 :root {
 
-         --version3_0: none;
 	/* Horizontal Servers List */
+
 	--HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
-	--HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+    --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+    --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  
+	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  
+	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  
+	--rs-online-color: #43b581; /* Colour for online status */
+	--rs-idle-color: #faa61a; /* Colour for idle status */
+	--rs-dnd-color: #f04747; /* Colour for dnd status */
+	--rs-offline-color: #636b75; /* Colour for offline status */
+	--rs-streaming-color: #643da7; /* Colour for streaming status */
+	--rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  
+	--rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 
 	/* ACCENT COLORS */
 	--main-color: #ff3f41; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
@@ -47,7 +75,7 @@
 	/* APP BACKGROUND */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://wallpapercave.com/wp/wp3274901.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg); /* app background image (link must be HTTPS) [default: url(tt)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -130,156 +158,122 @@
 }
 
 
-.container-1r6BKw .children-19S4PO .nicknames-1XK4Zt{
-	display: none !important;
+
+.rolesList-3uZoaa {
+	gap: 8px;
 	}
-	.container-1r6BKw .children-19S4PO .status-1XNdyw{
-	display: none !important;
-	}
-	.akaBadge-1M-1Gw{
-	display: none !important;
-	}
-	.container-1r6BKw .children-19S4PO{
-	flex: none;
-	min-width: 230px;
-	}
-	.container-1r6BKw .children-19S4PO .iconWrapper-2OrFZ1{
-	margin: 0 10px 0 0;
-	}
-	.container-1r6BKw .children-19S4PO .iconWrapper-2OrFZ1 .icon-22AiRD{
-	width: 20px;
-	}
-	.container-1r6BKw .children-19S4PO .iconWrapper-2OrFZ1 .channelName-qsg_a_{
+	.role-2TIOKu {
 	margin: 0;
+	height: auto;
+	padding: 6px 8px;
+	border-radius: 4px;
+	gap: 4px;
+	position: relative;
+	overflow: hidden;
 	}
-	.container-1r6BKw .children-19S4PO h3{
-	font-size: 12px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	user-select: none;
-	line-height: normal;
-	flex: 1;
+	.role-2TIOKu:hover .roleCircle-1EgnFN {
+	width: 100%;
+	opacity: 1;
 	}
-	.divider-3FBTu8{
-	display: none;
+	.role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
+	margin-left: 22px;
 	}
-	.container-1r6BKw .children-19S4PO h3:before{
-	display: block;
-	content: "Channel Name";
-	font-size: 11px;
-	}
-	.container-1r6BKw:hover > .children-19S4PO h3:before{
-	content: "Click for more details (if possible)";
-	}
-	#app-mount .container-1r6BKw.themed-ANHk51 .children-19S4PO .topic-TCb_qw{
+	.roleCircle-1EgnFN {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	margin: 0;
 	height: 100%;
-	opacity: 0;
+	border-radius: 0;
+	width: 85%;
+	-webkit-mask: linear-gradient(90deg, black, transparent);
+			mask: linear-gradient(90deg, black, transparent);
+	filter: none;
+	opacity: 0.3;
+	justify-content: flex-start;
+	padding: 15px;
+	box-sizing: border-box;
+	transition: 0.15s ease;
 	}
-	.container-1r6BKw .search-36MZv-{
-	margin-top: 4px;
-	margin-left: -18px;
+	.roleName-2ZJJYR {
+	position: relative;
+	margin: 0;
+	transition: margin-left 0.15s ease;
 	}
-	.container-1r6BKw .toolbar-1t6TWx{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%,-50%);
-	border-right: 1px solid #6f727d;
-	border-left: 1px solid #6f727d;
+	.roleRemoveIcon-387wKV {
+	width: 16px;
+	height: 16px;
 	}
-	.container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1{
-	margin: 0px 10px;
-	}
-	.container-1r6BKw .searchBar-3dMhjb{
-	padding: 0 !important;
-	overflow: visible;
-	background: transparent;
-	}
-	.container-1r6BKw .DraftEditor-root{
-	padding: 0 10px 0 28px;
-	margin-top: 3px;
-	}
+
+.privateChannels-oVe7HL [href="/store"] + svg,
+.item-3XjbnG [class*="Promo"],
+.premiumLabel-3HPvdB svg {
+display: none;
+}
+.premiumLabel-3HPvdB {
+color: var(--color-muted);
+}
+
+.membersWrap-3NUR2t {min-width: unset;}
+.members-3WRCEx {max-width: 65px;min-width: 65px;transition: 0.4s ease;}
+.members-3WRCEx:hover {max-width: 240px;min-width: 240px;}
+div:not(:hover)>.members-3WRCEx>div {padding-top: 10px;}
+
+
+
 	
 
-.message-2qnXI6:hover .reactionCount-2mvXRV {
-    font-size: 14px;
-    transform: translate(0px);
-    transition-delay: 0s;
-}
-.message-2qnXI6:hover .reaction-1hd86g {
-    max-width: 90px;
-    width: auto;
-}
-.reaction-1hd86g {
-    max-width: 30px;
-    transition: 0.5s;
-    transition-timing-function: ease-out;
-}
-.reactionCount-2mvXRV {
-    font-size: 0px;
-    transition-duration: 0.2s;
-    transform: translate(-20px);
-    transition-timing-function: ease-out;
-    transition-delay: 0.1s;
-}
+	.base-2v-uc0 {
+		transition: all 0.5s;
+		}
+		.base-2v-uc0:hover {
+		transition: all 0s;
+		transform: scale(1.02);
+		}
+
+		[class*="jumpToPresentBar"] {
+			display: contents;
+			}
+			[class*="jumpToPresentBar"] > button:first-child {
+			display: none;
+			}
+			[class*="jumpToPresentBar"] > button:last-child {
+			position: absolute;
+			z-index: 1;
+			bottom: 24px;
+			right: 22px;
+			padding: 8px !important;
+			height: auto;
+			background-color: #5865F2;
+			box-shadow: var(--elevation-high);
+			border-radius: 100px;
+			display: flex;
+			font-size: 0px;
+			color: transparent;
+			transition: font-size .2s .1s, color .2s, padding .4s .1s;
+			}
+			[class*="jumpToPresentBar"] > button svg {
+			order: -1;
+			margin: 0px;
+			height: 24px;
+			width: 24px;
+			top: auto;
+			margin-right: 0px;
+			margin-left: 0px;
+			color: #FFFFFF;
+			transition: margin .6s;
+			}
+			[class*="jumpToPresentBar"]:hover > button {
+			padding: 8px 18px !important;
+			font-size: 14px;
+			color: #FFFFFF;
+			transition: font-size .2s, color .2s .1s, padding .4s;
+			}
+			[class*="jumpToPresentBar"]:hover > button svg {
+			margin-right: 2px;
+			margin-left: -6px;
+			}
 
 
 
-.content-yTz4x3:before { /* Fix topbar shadow */
-    z-index: 12;
-    }
-    [class*="membersWrap-"] {
-    margin-right: -155px;
-    transition: transform .35s;
-    z-index: 10;
-    }
-    [class*="membersWrap-"]:hover,
-    [class*="membersWrap-"]:focus,
-    [class*="membersWrap-"]:focus-within {
-    transform: translatex(-175px);
-    }
-    [class*="membersWrap-"] > [class*="members-"] {
-    background-color: rgba(0, 0, 0, .6);;
-    transition: background-color .2s;
-    max-width: 200vw;
-    }
-    [class*="membersWrap-"] > [class*="members-"] > div {
-    background: none !important;
-    }
-    
-    [class*="membersWrap-"]:hover > [class*="members-"],
-    [class*="membersWrap-"]:focus-within > [class*="members-"] {
-    background-color: rgba(0, 0, 0, .6);
-    }
-    [class*="membersWrap-"] [class*="membersGroup-"] {
-    margin-right: auto;
-    width: 50px;
-    text-overflow: clip;
-    direction: rtl;
-    word-spacing: 100px;
-    }
-    [class*="membersWrap-"]:hover [class*="membersGroup-"],
-    [class*="membersWrap-"]:focus-within [class*="membersGroup-"] {
-    width: 100%;
-    margin: 0;
-    direction: ltr;
-    word-spacing: unset;
-    text-overflow: ellipsis;
-    }
-    [class*="membersWrap-"] [class*="member-"] [class*="content-"] {
-    filter: opacity(0);
-    transition: filter .2s;
-    }
-    [class*="membersWrap-"]:hover [class*="membersGroup-"],
-    [class*="membersWrap-"]:focus-within [class*="membersGroup-"],
-    [class*="membersWrap-"]:hover [class*="member-"] [class*="content-"],
-    [class*="membersWrap-"]:focus-within [class*="member-"] [class*="content-"] {
-    filter: opacity(1);
-    }
-
+	
