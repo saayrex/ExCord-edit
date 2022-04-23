@@ -6,6 +6,11 @@ Works for BetterDiscord and Powercord
 - Added Autoupdate. Just reload the Theme once a Day
 
 # Changelog
+##  24.04.2022
+
+Reworked the whole Theme. Finished Version.
+Better UI, Optimized Animations, Fixed every bug from the Prev. Versions.
+Enjoy!
 
 ##  12.01.2022
 
