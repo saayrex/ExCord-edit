@@ -6,6 +6,13 @@ Works for BetterDiscord and Powercord
 - Added Autoupdate. 
 
 # Changelog
+##  10.08.2022
+
+Updated Status Bar and fixed Discord ugly ass Update 
+Minor Changes to the Sidebar ( Performance )
+Fixed a Issue that caused Theme to crash if you had no Background loaded 
+Added Role Colors
+
 ##  24.04.2022
 
 Reworked the whole Theme. Finished Version.
