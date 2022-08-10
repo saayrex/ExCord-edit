@@ -1,5 +1,7 @@
 # ExCord
 Add to Theme Folder, Reload your Discord
+https://discord.gg/HU8XcFjkXP
+
 
 Works for BetterDiscord and Powercord
 
