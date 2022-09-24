@@ -1,7 +1,280 @@
 /**
  * @name ExCord Reloaded
  * @author Excurze
- * @version 1.2
+ * @version 1.0
+ * @description Cozy!
+ * @source 
+ * @website 
+ * @invite 
+ */
+
+
+
+/* IMPORT CSS */
+
+/* @import url("https://excurze.github.io/importexcord/excord.css"); */
+@import url("https://excurze.github.io/importexcord/excord.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+
+
+
+/* ChannelTabs Lined */
+
+
+
+/* SETTINGS */
+:root {
+
+	/* Horizontal Servers List */
+
+	--HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
+    --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+    --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+	--rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+	--rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+	--rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  
+	--rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+	--rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+	--rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  
+	--rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  
+	--rs-online-color: #43b581; /* Colour for online status */
+	--rs-idle-color: #faa61a; /* Colour for idle status */
+	--rs-dnd-color: #f04747; /* Colour for dnd status */
+	--rs-offline-color: #636b75; /* Colour for offline status */
+	--rs-streaming-color: #643da7; /* Colour for streaming status */
+	--rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+	--rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  
+	--rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
+	/* ACCENT COLORS */
+	--blob-color: #43b581; /* Change it to a HEX Colorcode if you have Problems seeing the Ping [default: #2780e6] */
+	--main-color: #ff3f41; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #cc2e2f; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */	
+	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+
+	/* STATUS COLORS */
+	--online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+	--streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+	/* GENERAL */
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted:  rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 220px; /* member list width [default: 240px] */
+
+	/* APP BACKGROUND */
+	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg); /* app background image (link must be HTTPS) [default: url(tt)]*/
+	--background-position: center; /* app background position [default: center] */
+	--background-size: cover; /* app background size [default: cover] */
+	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+	--background-attachment: fixed; /* app background attachment [default: fixed] */
+	--background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--background-contrast: 100%; /* app background contrast [default: 100%] */
+	--background-saturation: 100%; /* app background saturation [default: 100%] */
+	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+	--background-blur: 0px; /* app background blur [default: 0px] */
+	
+	/* HOME BUTTON ICON */
+	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+	--home-position: center; /* home button icon position [default: center] */
+	--home-size: 40px; /* home button icon size [default: 40px] */
+		
+	/* CHANNEL COLORS */
+	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+	--channel-color:  rgba(255,255,255,0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+	--muted-color: rgba(255,255,255,0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+	
+	/* MODAL BACKDROP */
+	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
+	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
+	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
+	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
+	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
+	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
+	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
+	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
+	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
+	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+	
+	/* USER POPOUT BACKGROUND */
+	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
+	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
+	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
+	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
+	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
+	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
+	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+	--user-popout-overlay: rgba(0, 0, 0, .65); /* user popout overlay color [default: rgba(0, 0, 0, .65)] */
+	
+	/* USER MODAL BACKGROUND */
+	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
+	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
+	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
+	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
+	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
+	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
+	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+	
+	/* THEME BD COLORS */
+	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
+	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+
+	/* CUSTOM VARIABLES */
+	--panels-opacity: rgba(0, 0, 0, 0.7);   /* Panels opacity */
+	--loading-gif: url(https://imgur.com/x4fg0Qv.gif); /* Loading gif */
+	--general-margin: 20px;      /* App margin [default: 20px]*/
+	--between-panels-margin: 10px;  /* margin between panels [default: 10px]*/
+	--panels-radius: 10px;          /* radius of various elements [default: 10px]*/
+	--icons-roundness: 15%;         /* roundness of various icons/avatars around the app [default: 15%]*/
+}
+
+
+
+.rolesList-3uZoaa {
+	gap: 8px;
+	}
+	.role-2TIOKu {
+	margin: 0;
+	height: auto;
+	padding: 6px 8px;
+	border-radius: 4px;
+	gap: 4px;
+	position: relative;
+	overflow: hidden;
+	}
+	.role-2TIOKu:hover .roleCircle-1EgnFN {
+	width: 100%;
+	opacity: 1;
+	}
+	.role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
+	margin-left: 22px;
+	}
+	.roleCircle-1EgnFN {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	height: 100%;
+	border-radius: 0;
+	width: 85%;
+	-webkit-mask: linear-gradient(90deg, black, transparent);
+			mask: linear-gradient(90deg, black, transparent);
+	filter: none;
+	opacity: 0.3;
+	justify-content: flex-start;
+	padding: 15px;
+	box-sizing: border-box;
+	transition: 0.15s ease;
+	}
+	.roleName-2ZJJYR {
+	position: relative;
+	margin: 0;
+	transition: margin-left 0.15s ease;
+	}
+	.roleRemoveIcon-387wKV {
+	width: 16px;
+	height: 16px;
+	}
+
+.privateChannels-oVe7HL [href="/store"] + svg,
+.item-3XjbnG [class*="Promo"],
+.premiumLabel-3HPvdB svg {
+display: none;
+}
+.premiumLabel-3HPvdB {
+color: var(--color-muted);
+}
+
+
+
+	
+
+	.base-2v-uc0 {
+		transition: all 0.5s;
+		}
+		.base-2v-uc0:hover {
+		transition: all 0s;
+		transform: scale(1.02);
+		}
+
+		[class*="jumpToPresentBar"] {
+			display: contents;
+			}
+			[class*="jumpToPresentBar"] > button:first-child {
+			display: none;
+			}
+			[class*="jumpToPresentBar"] > button:last-child {
+			position: absolute;
+			z-index: 1;
+			bottom: 24px;
+			right: 22px;
+			padding: 8px !important;
+			height: auto;
+			background-color: #5865F2;
+			box-shadow: var(--elevation-high);
+			border-radius: 100px;
+			display: flex;
+			font-size: 0px;
+			color: transparent;
+			transition: font-size .2s .1s, color .2s, padding .4s .1s;
+			}
+			[class*="jumpToPresentBar"] > button svg {
+			order: -1;
+			margin: 0px;
+			height: 24px;
+			width: 24px;
+			top: auto;
+			margin-right: 0px;
+			margin-left: 0px;
+			color: #FFFFFF;
+			transition: margin .6s;
+			}
+			[class*="jumpToPresentBar"]:hover > button {
+			padding: 8px 18px !important;
+			font-size: 14px;
+			color: #FFFFFF;
+			transition: font-size .2s, color .2s .1s, padding .4s;
+			}
+			[class*="jumpToPresentBar"]:hover > button svg {
+			margin-right: 2px;
+			margin-left: -6px;
+			}
+
+/**
+ * @name ExCord Reloaded
+ * @author Excurze
+ * @version 1.0
  * @description Cozy!
  * @source 
  * @website 
@@ -214,10 +487,7 @@ display: none;
 color: var(--color-muted);
 }
 
-.membersWrap-3NUR2t {min-width: unset;}
-.members-3WRCEx {max-width: 65px;min-width: 65px;transition: 0.4s ease;}
-.members-3WRCEx:hover {max-width: 240px;min-width: 240px;}
-div:not(:hover)>.members-3WRCEx>div {padding-top: 10px;}
+
 
 
 
@@ -274,6 +544,3 @@ div:not(:hover)>.members-3WRCEx>div {padding-top: 10px;}
 			margin-left: -6px;
 			}
 
-
-
-	
