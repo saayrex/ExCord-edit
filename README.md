@@ -1,4 +1,4 @@
-Support: https://discord.gg/HU8XcFjkXP
+Support and how to edit your theme: https://discord.gg/HU8XcFjkXP
 
 # ExCord
 Add to Theme Folder, Reload your Discord
