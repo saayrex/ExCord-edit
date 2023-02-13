@@ -13,7 +13,8 @@
 /* IMPORT CSS */
 
 /* @import url("https://excurze.github.io/importexcord/excord.css"); */
-@import url("https://excurze.github.io/importexcord/excord.css");
+@import url(https://cdn.statically.io/gh/Overimagine1/old-discord-font/main/source.min.css);
+@import url("https://Kargobob1.github.io/importexcord/excord.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 
@@ -53,7 +54,7 @@
 
 	/* ACCENT COLORS */
 	--blob-color: var(--main-color); /* Change it to a HEX Colorcode if you have Problems seeing the Ping [default: #2780e6] */
-	--main-color: #ff3f41; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--main-color: #cc2e2f; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
 	--hover-color: #cc2e2f; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
 	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
 	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */	
@@ -77,7 +78,7 @@
 	/* APP BACKGROUND */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg); /* app background image (link must be HTTPS) [default: url(tt)]*/
+	--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg); /* app background image (link must be HTTPS) [default: https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -88,7 +89,7 @@
 	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
 	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
 	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
-	--background-blur: 0px; /* app background blur [default: 0px] */
+	--background-blur: 5px; /* app background blur [default: 0px] */
 	
 	/* HOME BUTTON ICON */
 	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
@@ -270,5 +271,4 @@ color: var(--color-muted);
 			margin-right: 2px;
 			margin-left: -6px;
 			}
-
 
