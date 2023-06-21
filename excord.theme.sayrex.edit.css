@@ -54,8 +54,8 @@
 
 	/* ACCENT COLORS */
 	--blob-color: var(--main-color); /* Change it to a HEX Colorcode if you have Problems seeing the Ping [default: #2780e6] */
-	--main-color: #cc2e2f; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-	--hover-color: #cc2e2f; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--main-color: #6649ac; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #452774; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
 	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
 	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */	
 	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
@@ -78,7 +78,10 @@
 	/* APP BACKGROUND */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg); /* app background image (link must be HTTPS) [default: https://wallpaperforu.com/wp-content/uploads/2020/07/black-wallpaper-20072315094617.jpg]*/
+	//--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/07/car-wallpaper-20072612242031-scaled.jpg);
+	//--background-image: url(https://wallpaperforu.com/wp-content/uploads/2021/01/neon-wallpaper-21012401285636-scaled.jpg); /* app background image (link must be HTTPS) [default: url(tt)]*/
+	--background-image: url(https://wallpaperforu.com/wp-content/uploads/2020/08/neon-wallpaper-2008181520578.jpg);
+	//--background-image: url('https://i.pinimg.com/originals/4e/b4/9a/4eb49a890dc3f2ca8c2a7e1e0d3adeec.gif'); gif
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -92,9 +95,9 @@
 	--background-blur: 5px; /* app background blur [default: 0px] */
 	
 	/* HOME BUTTON ICON */
-	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+	 --home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
 	--home-position: center; /* home button icon position [default: center] */
-	--home-size: 40px; /* home button icon size [default: 40px] */
+	--home-size: 60px; /* home button icon size [default: 40px] */
 		
 	/* CHANNEL COLORS */
 	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
